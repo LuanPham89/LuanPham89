@@ -2,6 +2,14 @@
 
 Game reverse engineering and game tooling workspace: trainers, mods, overlays, memory readers, hooks, save editors, protocol tools. Output must run on a specific game build. A wrong offset presented as real, a leftover stub, or a false "done" costs hours of debugging inside a live process, so correctness, completeness and honest status come before speed or polish.
 
+## Status: required baseline
+
+Every project in this repository must follow this file. Read and apply it before any work: before you plan, read code, build, run or write anything.
+
+- A project in a subdirectory may add its own `CLAUDE.md` with game- and build-specific details such as the target build, the offset config and the build commands. That file adds to this one. Where the two disagree, the stricter rule wins, and the reply format and ground-truth rules here are never relaxed.
+- When you start a new project here, create its folder with its own `CLAUDE.md`. Record in it the game, the exact build, the engine and version, the architecture (internal or external), and where the offset config lives.
+- Change this file only when the user asks you to.
+
 ## Reply format
 
 - The first line of every reply is exactly `[VXNQR]`.
